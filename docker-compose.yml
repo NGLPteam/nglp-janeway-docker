@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  janeway:
+    build:
+      context: .
+    ports:
+      - '8000:8000'
+    environment:
+      DATABASE_URL: postgres://janeway:janeway@janeway-postgres/janeway
+    volumes:
+      - ./fixtures:/srv/janeway/fixtures:Z
+  janeway-postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: janeway
+      POSTGRES_USER: janeway
+      POSTGRES_PASSWORD: janeway
+    

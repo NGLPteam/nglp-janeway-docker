@@ -1,0 +1,9 @@
+---
+- pk: 1
+  model: press.press
+  fields:
+    name: Example Press
+    domain: localhost:8000
+    main_contact: press@invalid
+
+
