@@ -3,7 +3,7 @@ FROM python:3.8
 WORKDIR /srv/janeway
 
 # 'master' or e.g. 'v1.3.9'
-ENV JANEWAY_REF=master
+ENV JANEWAY_REF=2284-bugfix
 # 'head' or 'tag'
 ENV JANEWAY_REF_TYPE=head
 

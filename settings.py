@@ -4,6 +4,8 @@ from core import janeway_global_settings
 
 env = environ.Env()
 
+MERGEABLE_SETTINGS = set()
+
 DATABASES = {
     "default": env.db("DATABASE_URL", 'sqlite:////srv/janeway/db.sqlite3'),
 }
